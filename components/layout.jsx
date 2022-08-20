@@ -1,13 +1,14 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+// Local styles (used for component-level styles)
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 
 const name = 'Mehrnoosh';
 export const siteTitle = 'Next.js Sample Website';
 
-// Boolean 'home' prop which will adjust the size of the title and the image
+// Boolean 'home' prop: will adjust the size of the title and the image
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
